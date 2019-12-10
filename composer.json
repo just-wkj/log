@@ -1,0 +1,17 @@
+{
+    "name": "justwkj/log",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "justwkj",
+            "email": "justwkj@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Justwkj\\Log\\": "src"
+        }
+    }
+}
