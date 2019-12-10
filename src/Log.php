@@ -20,8 +20,8 @@ class Log {
      * @throws \Exception
      */
     public function __construct($path = './', $fileName = 'log.log') {
-        if (!is_dir($path)) {
-            throw new \Exception(sprintf("path:%s not exists", $path));
+        if (!is_dir($path) && !mkdir($path, 0755, true)) {
+            throw new \Exception(sprintf("path:%s can't be created", $path));
         }
 
         $path = rtrim($path, '/');
